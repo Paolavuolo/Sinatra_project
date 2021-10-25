@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PAGE POTIN</title>
+</head>
+<body>
+
+<% gossips.each_with_index do |gossip,index| %> <! -- ici on rajoute l'index de chaque commentaire -->
+    	<h1>
+    		<a href="gossips/<%=index%>">Voici la page du Potin n°<%= index%></a><br/> <! -- ce code est un lien dont une partie va permettre de numéroté le potin, c'est une route dynamique -->
+    	</h1>
+    	<% end %>
+    	<p> Son auteur : <%= all_gossips[i].author %> <br/>
+    	    Le contenu du potin :" <%= all_gossips[i].content %> 
+    	</p>
+
+    	<a href="/">Retour a la page d'acceuil</a>
+</body>
+</html>
