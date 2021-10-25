@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Gossip Project</title>
+</head>
+<body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+    <p> Bienvenue !! il n'y a pas encore de potins sur ce site mais ils ne vont pas tarder a débarquer. En attandant tu peux <a href="/gossips/new/">aller créer un nouveau potin</a>
+    	<% gossips.each do |gossip| %>
+    	<p>
+    		<%= gossip.author %><br/> <! -le % permet d'exécuter du code ruby en html- >
+    		<%= gossip.content %>
+    	</p>
+    	<% end %>
+</body>
+</html>
